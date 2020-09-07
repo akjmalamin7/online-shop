@@ -9,7 +9,6 @@ html{
 }
 body{
 	width: 100%;
-	overflow-x: hidden;
     font-family: 'Source Sans Pro';
     font-weight: 400;
     font-style: normal;
@@ -242,6 +241,13 @@ input::placeholder, select option{
 	color: #000;
 	border-radius: 50%;
 	opacity: 1 !important;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+	transition:.5s;
+}
+.card-inner a i:hover{
+	background: #EE4994;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+	color: #fff;
 }
 /* start product category */
 
@@ -253,23 +259,103 @@ input::placeholder, select option{
 ************************************* START PRODUCT PAGE CSS****************************************
 ****************************************************************************************************/
 .product-section-section{
-	text-align:center;
+
 }
 .single-product {
-	margin-top: 25px;
+	margin-bottom: 26px;
 }
 .product-section-section .card{
 	border:none;
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
 }
-.single-product .card .card-body ul li {
-	color: #333;
-	font-size: 15px;
-	margin-top: 20px;
+.card-image{
+	position: relative;
+	overflow: hidden;
+	transition:.5s;
 }
-.single-product .card .card-body ul li span{
-	font-weight: 700;
+.product-card-inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 100%;
+	left: 0;
+	padding: 19px;
+	transition: .5s;
+	background-color: #3339;
 }
+.single-product .card:hover .product-card-inner{
+	top:0;
+}
+.card-heading ul{
+	margin-bottom:66px;
+}
+.card-heading ul li {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* cart bnutton */
+.details{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+}
+.details i {
+	height: 50px;
+	width: 50px;
+	background: #fff;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	transition:.5s;
+	color:#333;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+}
+.details i:hover{
+	background: #EE4994;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+	color:#fff;
+}
+.product-utton {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 9px;
+	padding: 19px;
+}
+.add-to-cart-button {
+	background: #333;
+	display: block;
+	padding: 5px 5px;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	transition:.5s;
+}
+
+.add-to-cart-details:hover, .add-to-cart-button:hover{
+	color:#fff;
+	background-color:#EE4893;
+}
+.add-to-cart-details {
+	background: #333;
+	display: inline-block;
+	padding: 9px 48px;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	transition: .5s;
+}
+/* product details */
+.product-details-section #accordion .card{
+	border:none;
+}
+
+/* ======= */
+/* .popular-product-section {
+	background-color:#FFF1F1;
+} */
 /***************************************************************************************************
 ************************************* END PRODUCT PAGE CSS  ****************************************
 ****************************************************************************************************/
@@ -279,7 +365,41 @@ input::placeholder, select option{
 /***************************************************************************************************
 ***************************************START FOOTER SECTION CSS*************************************
 ****************************************************************************************************/
-
+.footer-section{
+	background-color:rgb(29, 29, 29);
+}
+.footer-column{
+	margin-bottom:50px;
+}
+.footer-column h5{
+	font-weight: 600;
+	text-transform:uppercase ;
+}
+.footer-column p, .footer-column ul li a {
+	font-size: 17px;
+}
+.footer-column ul li a:hover{
+	color:#EE4E98;
+}
+.footer-column ul li a {
+	color: #fff;
+	line-height: 32px;
+}
+.footer-column .social-links a i{
+	color:#fff;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background-color:#fff;
+	color:#EE4E98;
+	border-radius:50%;
+	transition:.5s;
+}
+.footer-column .social-links a i:hover{
+	background-color:#EE4E98;
+	color:#fff;
+}
 /***************************************************************************************************
 *****************************************END FOOTER SECTION CSS*************************************
 ****************************************************************************************************/

@@ -26,16 +26,25 @@ jQuery(document).ready(function(){
         });
    
      
-      //end slick slider
+
     
-    
+    // zoom
+    $("#exzoom").exzoom({
+        autoplay:false
+      });
+      //zoom
+      $("#zoom").elevateZoom({
+        zoomType: "inner",
+        debug: true,
+        cursor: "crosshair"
+    });
 
       
 });
 
 //sticky header
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= 300) {
+    if ($(window).scrollTop() >=300) {
         $('nav').addClass('fixed-header');
     }
     else {
