@@ -1,0 +1,10 @@
+@media(max-width:991px){
+    .search-button {
+        width: 370px;
+    }
+}
+@media(max-width:767px){
+    .search-button {
+       display: none;
+    }
+}

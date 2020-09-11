@@ -95,6 +95,7 @@ input:focus, button:focus, select:focus{
     outline: 0 none !important;
     -webkit-box-shadow: unset !important;
 			box-shadow: unset !important;
+			border:1px solid #EE4993 !important;	
 }
 input::placeholder, select option{
 	font-family: 'Source Sans Pro' !important;
@@ -139,6 +140,41 @@ input::placeholder, select option{
 	width: 100%;
 	z-index: 999;
 	transition: .5s;
+}
+.dropdown-menu {
+	top: 67px;
+	left: -163px;
+	width: 200px;
+	border-radius: 0px !important;
+
+}
+.dropdown-menu .dropdown-item:hover{
+	color:#EE4893;
+}
+.search-button{
+	position: absolute;
+	left: 50%;
+	width: 490px;
+	transform: translate(-50%);
+}
+.search-button .btn-warning:hover {
+	color: #fff;
+	background-color: #EE4893;
+	border-color: #EE4893;
+}
+.search-button .btn-warning{
+	color: #fff;
+	background-color: #1D1D1D;
+	border-color: #1D1D1D;
+}
+.search-button .input-group-append .btn, .input-group-prepend .btn {
+	width: 108px;
+}
+
+.search-button .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle {
+	color: #fff;
+	background-color: #EE4893;
+	border-color: #EE4893;
 }
 /***************************************************************************************************
 *****************************************END HEADER SECTION CSS*************************************
@@ -185,7 +221,8 @@ input::placeholder, select option{
 	color:#EE4994;
 }
 .brand-cart {
-	color:#EE4994 !important;
+	color: #1D1D1D;
+	font-size: 23px;
 }
 /* end home slider section */
 
@@ -341,11 +378,12 @@ input::placeholder, select option{
 .add-to-cart-details {
 	background: #333;
 	display: inline-block;
-	padding: 9px 48px;
+	padding: 5px 35px;
 	color: #fff;
 	font-weight: 600;
 	text-align: center;
 	transition: .5s;
+	font-size: 14px;
 }
 /* product details */
 .product-details-section #accordion .card{
@@ -358,6 +396,98 @@ input::placeholder, select option{
 } */
 /***************************************************************************************************
 ************************************* END PRODUCT PAGE CSS  ****************************************
+****************************************************************************************************/
+
+/***************************************************************************************************
+************************************* START UPDATE CART PAGE CSS  **********************************
+****************************************************************************************************/
+.view-cart-section .card{
+	border-radius: 0px !important;
+}
+.btn-outline-warning{
+	color: #333;
+	border-color: #EE4893;
+	padding:8px 25px;
+	transition:.5s !important;
+}
+.btn-outline-warning:hover {
+	color: #FFF;
+	background-color: #EE4893;
+	border-color: #EE4893;
+}
+.btn-outline-warning:not(:disabled):not(.disabled).active, .btn-outline-warning:not(:disabled):not(.disabled):active, .show > .btn-outline-warning.dropdown-toggle {
+	color: #FFF;
+	background-color: #EE4893;
+	border-color: #EE4893;
+}
+.table td, .table th {
+	font-size: 17px;
+}
+.proceed-to-checkout a{
+	background: #000;
+	color: #fff;
+	padding: 7px 20px;
+	text-transform: capitalize;
+	transition:.5s; 
+}
+.proceed-to-checkout a:hover{
+	background: #EE4893;
+	color: #fff;
+	padding: 7px 20px;
+	text-transform: capitalize;
+}
+
+
+.checkout-section .card input[type="submit"]{
+	background: #1D1D1D;
+	color: #fff;
+	transition:.5s;
+}
+.checkout-section .card input[type="submit"]:hover{
+	background: #EE4893;
+	border:1px solid #EE4893;
+}
+.checkout-section .card input[type="submit"]:focus{
+	border:1px solid #1D1D1D !important;
+}
+.checkout-section .card {
+	border: none;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,.1);
+	border-radius: 0px !important;
+	padding: 28px;
+}
+.dont-have-account-line{
+	position: relative;
+	text-align:center;
+}
+.dont-have-account-line span {
+	padding: 0px 15px;
+	background: #fff;
+	position: relative;
+	text-align: center;
+	z-index: 9;
+}
+.dont-have-account-line::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	right: 0;
+	border-top: 1px solid #ddd;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+}
+.dont-have-account ul li {
+	font-size: 17px;
+	letter-spacing: .2px;
+}
+.dont-have-account ul li a:hover{
+	color:#EE4893;
+}
+/***************************************************************************************************
+************************************* END UPDATE CART PAGE CSS  ************************************
 ****************************************************************************************************/
 
 

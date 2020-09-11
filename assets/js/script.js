@@ -44,7 +44,7 @@ jQuery(document).ready(function(){
 
 //sticky header
 $(window).scroll(function(){
-    if ($(window).scrollTop() >=300) {
+    if ($(window).scrollTop() >=10) {
         $('nav').addClass('fixed-header');
     }
     else {
